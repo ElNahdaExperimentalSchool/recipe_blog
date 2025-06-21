@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Recipes</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #FFF8DC;
+            color: #8B4513;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .recipe-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border: 3px solid #DEB887;
+            border-radius: 0;
+        }
+        
+        h1 {
+            color: #CD853F;
+            text-decoration: underline;
+            text-align: center;
+        }
+        
+        .ingredients {
+            background: #F5F5DC;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #CD853F;
+        }
+        
+        .ingredients li {
+            margin: 8px 0;
+        }
+        
+        .cooking-time {
+            background: #FFE4B5;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .steps {
+            counter-reset: step-counter;
+        }
+        
+        .steps li {
+            counter-increment: step-counter;
+            margin: 15px 0;
+            padding-left: 10px;
+        }
+        
+        .steps li::marker {
+            content: "Step " counter(step-counter) ": ";
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="recipe-container">
+        <h1> Chocolate Cake</h1>
+        <div class="cooking-time"> Prep: 20 min | Bake: 35 min</div>
+
+        <div class="ingredients">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 cups all-purpose flour</li>
+                <li>1¾ cups sugar</li>
+                <li>¾ cup cocoa powder</li>
+                <li>2 eggs</li>
+                <li>1 cup milk</li>
+            </ul>
+        </div>
+
+        <h3>Instructions:</h3>
+        <ol class="steps">
+            <li>Preheat oven to 350°F</li>
+            <li>Mix dry ingredients in large bowl</li>
+            <li>Add wet ingredients and mix well</li>
+            <li>Bake for 35 minutes</li>
+        </ol>
+        <img style="margin-left: 70px;" src="https://th.bing.com/th/id/OIP.nBKNRjeMXj4EbVeA3utiJQHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain" alt="">
+    </div>
+</body>
+
+</html>
